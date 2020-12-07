@@ -46,10 +46,7 @@ public class MyDate {
 
     @Override
     public String toString() {
-        return "MyDate {" +
-                "day=" + day +
-                ", month=" + month +
-                ", year=" + year +
-                '}';
+        return " " + day + "/" + getMonthShortForm() +
+                "/" + year;
     }
 }

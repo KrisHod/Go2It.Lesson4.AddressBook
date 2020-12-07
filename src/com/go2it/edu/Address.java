@@ -20,13 +20,12 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address {" +
+        return ": " +
                 "streetInfo1='" + streetInfo1 + '\'' +
                 ", streetInfo2='" + streetInfo2 + '\'' +
                 ", city='" + city + '\'' +
                 ", postalCode='" + postalCode + '\'' +
                 ", province='" + province + '\'' +
-                ", country='" + country + '\'' +
-                '}';
+                ", country='" + country;
     }
 }

@@ -1,8 +1,5 @@
 package com.go2it.edu;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Contact {
     private String firstName;
     private String lastName;
@@ -88,5 +85,18 @@ public class Contact {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    @Override
+    public String toString() {
+        return "Contact number " + ContactManager.getContactList().size() + ": " +
+                "first name='" + firstName + '\'' +
+                ", last name='" + lastName + '\'' +
+                ", home phone='" + homePhone + '\'' +
+                ", work phone='" + workPhone + '\'' +
+                ", home address=" + homeAddress +
+                ", email='" + email + '\'' +
+                ", birthday=" + birthday +
+                ", notes='" + notes;
     }
 }
