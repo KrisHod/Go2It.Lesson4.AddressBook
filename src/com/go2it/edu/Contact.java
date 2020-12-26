@@ -9,10 +9,11 @@ public class Contact {
     private String email;
     private MyDate birthday;
     private String notes;
+    private int number;
 
 
     public Contact(String firstName, String lastName, String homePhone,
-                   String workPhone, Address homeAddress, String email, MyDate birthday, String notes) {
+                   String workPhone, Address homeAddress, String email, MyDate birthday, String notes, int number) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.homePhone = homePhone;
@@ -21,6 +22,7 @@ public class Contact {
         this.email = email;
         this.birthday = birthday;
         this.notes = notes;
+        this.number = number;
     }
 
     public String getFirstName() {
@@ -87,6 +89,14 @@ public class Contact {
         this.notes = notes;
     }
 
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
     @Override
     public String toString() {
         return "Contact number " + ContactManager.getContactList().size() + ": " +
@@ -97,6 +107,6 @@ public class Contact {
                 ", home address=" + homeAddress +
                 ", email='" + email + '\'' +
                 ", birthday=" + birthday +
-                ", notes='" + notes;
+                ", notes='" + notes + "\n";
     }
 }
